@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary1: #ae0000;
+  --primary1-light: #d80000;
+  --primary1-dark1: #870000;
+  --primary1-dark2: #660000;
+
+  --primary2: #d30000;
+  --primary2-light: #d30000;
+  --primary2-dark: #d30000;
+  --primary1-dark2: #660000;
+
+  --secondary1: #d30000;
+  --secondary1-light: #d30000;
+  --secondary1-dark: #d30000;
+  --secondary1-dark2: #660000;
+
+  --secondary2: #d30000;
+  --secondary2-light: #d30000;
+  --secondary2-dark: #d30000;
+  --secondary2-dark2: #660000;
+}
+
+.mainpost-shadow-red {
+  text-shadow: 2px 2px 0px #ae0000, 3px 3px 0px #ae0000, 4px 4px 0px #ae0000,
+    5px 5px 0px #ae0000, 6px 6px 0px #ae0000, 7px 7px 0px #ae0000,
+    8px 8px 0px #ae0000, 9px 9px 0px #ae0000, 10px 10px 0px #ae0000;
+}
+
+.group-hover .mainpost-shadow-red {
+  text-shadow: 2px 2px 0px #ae0000, 3px 3px 0px #ae0000, 4px 4px 0px #ae0000,
+    5px 5px 0px #ae0000, 6px 6px 0px #ae0000, 7px 7px 0px #ae0000,
+    8px 8px 0px #ae0000, 9px 9px 0px #ae0000, 10px 10px 0px #ae0000;
+}
+
+.group:hover .mainpost-shadow-red {
+  @apply text-red-500; /* Apply the desired hover style */
+}
