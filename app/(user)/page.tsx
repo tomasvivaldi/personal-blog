@@ -43,7 +43,7 @@ export default async function HomePage() {
       <section id="HighlightedPosts">
         <BlurredBg
           darkBackground="/backgrounds/DarkMode/16.jpg"
-          lightBackground="/backgrounds/LightMode/10.jpg"
+          lightBackground="/backgrounds/LightMode/14.jpg"
         />
         <hr className=" mx-auto my-8 md:my-16 w-full max-w-[80%] border-[--primary1-dark1]" />
         <div
