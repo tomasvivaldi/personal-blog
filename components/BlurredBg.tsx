@@ -28,6 +28,7 @@ const BlurredBg = ({ lightBackground, darkBackground }: Props) => {
             src={darkBackground}
             alt="Section background"
             fill
+            priority
           />
         </div>
       ) : (
@@ -37,6 +38,7 @@ const BlurredBg = ({ lightBackground, darkBackground }: Props) => {
             src={lightBackground}
             alt="Section background"
             fill
+            priority
           />
         </div>
       )}
