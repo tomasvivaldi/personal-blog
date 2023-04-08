@@ -35,7 +35,7 @@ function MainPost({ posts }: Props) {
             >
               <div className=" group flex-grow-0 flex-shrink-0 flex flex-col items-end">
                 <div
-                  className="flex-grow-0 flex-shrink-0 w-[380px] sm:w-[450px] lg:w-[400px] xl:w-[450px] h-auto 
+                  className="flex-grow-0 flex-shrink-0 w-[320px] sm:w-[380px] md:w-[450px] lg:w-[400px] xl:w-[450px] h-auto 
                 relative block box-border mx-auto sm:mr-auto sm:mx-0 drop-shadow-md shadow-black  group-hover:shadow-xl"
                 >
                   <Image
@@ -46,7 +46,7 @@ function MainPost({ posts }: Props) {
                     height={1500}
                   />
                 </div>
-                <div className=" relative min-h-full w-[400px] sm:w-[500px] -mt-10 sm:-mt-12 text-left">
+                <div className=" relative min-h-full w-[350px] sm:w-[400px] md:w-[500px] -mt-10 sm:-mt-12 text-left">
                   <div className="z-20 font-semibold text-gray-800 dark:text-white w-full flex flex-col">
                     <h2 className="  border-x-inherit text-5xl sm:text-6xl ">
                       <span

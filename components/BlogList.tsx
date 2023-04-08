@@ -16,7 +16,7 @@ const BlogList = ({ posts }: Props) => {
 
   return (
     <div className="relative z-0">
-      <div className="grid grid-cols-1 md:grid-cols-2 px-10 gap-10 gap-y-16 pb-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 px-6 sm:px-10 gap-10 gap-y-16 pb-24">
         {posts.slice(0, loadMore)?.map((item) => (
           <>
             <ClientSideRoute
