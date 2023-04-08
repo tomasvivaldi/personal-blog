@@ -19,7 +19,7 @@ export default function RootLayout({
   const hideBanner = router?.startsWith("/post/") ? false : true;
   return (
     <html>
-      <body className="max-w-7xl mx-auto bg-[#e0e0e0] dark:bg-[#222] ">
+      <body className="max-w-7xl mx-auto bg-[#f1f1f1] dark:bg-[#222] ">
         <Providers>
           <Header />
           <ScrollToTop />
