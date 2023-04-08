@@ -43,7 +43,11 @@ async function Post({ params: { slug } }: Props) {
   return (
     <article className="px-10 pb-28">
       <a href="/" className="relative inline-block text-lg group mb-10 mt-10">
-        <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white ">
+        <span
+          className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight
+         text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg
+          group-hover:text-white  "
+        >
           <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50 dark:bg-white"></span>
           <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-[#222] dark:bg-[#f7ab0a] group-hover:-rotate-180 ease"></span>
           <span className="relative">
@@ -83,7 +87,9 @@ async function Post({ params: { slug } }: Props) {
           <section className="z-20 p-5 bg-[#f7ab0a]/20 w-full">
             <div className="flex flex-col md:flex-row justify-between gap-y-5">
               <div className="">
-                <h1 className="text-4xl font-extrabold">{post.title}</h1>
+                <h1 className="text-4xl font-extrabold text-white drop-shadow-[2px_2px_0px_#ae0000] dark:drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]">
+                  {post.title}
+                </h1>
                 <p>
                   {new Date(post._createdAt).toLocaleDateString("en-US", {
                     day: "numeric",
@@ -101,18 +107,22 @@ async function Post({ params: { slug } }: Props) {
                   width={40}
                 /> */}
                 <div className="w-64">
-                  <h3 className="text-lg font-bold">{post.author.name}</h3>
+                  <h3 className="text-lg font-semibold drop-shadow-[1px_1px_0px_rgba(0,0,0,0.5)] dark:drop-shadow-[1px_1px_0px_rgba(0,0,0,0.25)]">
+                    Author: {post.author.name}
+                  </h3>
                 </div>
               </div>
             </div>
 
             <div>
-              <h2 className="italic pt-10">{post.description}</h2>
+              <h2 className="font-semibold italic pt-10 drop-shadow-[1px_1px_0px_#000] dark:drop-shadow-[1px_1px_0px_rgba(0,0,0,0.25)]">
+                {post.description}
+              </h2>
               <div className="flex items-center justify-end mt-auto space-x-2">
                 {post.categories.map((category) => (
                   <p
                     key={category._id}
-                    className="bg-gray-800 text-white px-3 py-1 rounded-lg text-sm font-semibold mt-4"
+                    className="bg-[#ae0000] text-white px-3 py-1 rounded-lg text-sm font-semibold mt-4"
                   >
                     {category.title}
                   </p>
@@ -123,7 +133,7 @@ async function Post({ params: { slug } }: Props) {
         </div>
       </section>
       <section>
-        <div className="lg:max-w-[95%]">
+        <div className="lg:max-w-[700px]">
           <PortableText value={post.body} components={RichTextComponents} />
         </div>
       </section>

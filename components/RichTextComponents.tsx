@@ -56,7 +56,7 @@ export const RichTextComponents = {
           href={value.href}
           rel={rel}
           target="_blank"
-          className="text-gray-300 underline decoreration-[--primary1] hover:decoration-red-600 hover:text-white"
+          className="text-gray-700 dark:text-gray-200 underline decoreration-[--primary1] hover:decoration-red-600 hover:text-black dark:hover:text-white"
         >
           {children}
         </Link>
