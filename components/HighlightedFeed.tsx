@@ -13,10 +13,10 @@ const HighlightedFeed = ({ posts }: Props) => {
   );
 
   return (
-    <div className="flex flex-col gap-4 mx-auto bg-slate-800/10 rounded-xl p-8 dark:bg-slate-800/60">
-      <div className="text-lg text-white mb-4">
+    <div className="flex flex-col gap-4 mx-auto bg-slate-800/10 rounded-xl max-w-[95%] sm:px-4 py-8 md:p-8 dark:bg-slate-800/60">
+      <div className="text-lg text-white sm:mb-4">
         <span
-          className="z-20 relative inline-block before:-z-10 before:block before:absolute 
+          className="z-20 mx-4 relative inline-block before:-z-10 before:block before:absolute 
         before:-inset-1 before:-skew-y-3 before:bg-[--primary1]"
         >
           Highlighted Posts
@@ -29,7 +29,7 @@ const HighlightedFeed = ({ posts }: Props) => {
               <HighlightedCard post={item} />
             </div>
             {index !== highlightedPosts.length - 1 && (
-              <hr className="my-6 border-gray-600 max-w-[95%]" />
+              <hr className="my-6 border-gray-600 mx-auto max-w-[95%]" />
             )}
           </React.Fragment>
         ))}
