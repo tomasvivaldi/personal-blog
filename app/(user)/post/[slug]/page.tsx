@@ -87,7 +87,7 @@ async function Post({ params: { slug } }: Props) {
           <section className="z-20 p-5 bg-[#f7ab0a]/20 w-full">
             <div className="flex flex-col md:flex-row justify-between gap-y-5">
               <div className="">
-                <h1 className="text-4xl font-extrabold text-white drop-shadow-[2px_2px_0px_#ae0000] dark:drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]">
+                <h1 className="text-2xl sm:text-4xl font-extrabold text-white drop-shadow-[2px_2px_0px_#ae0000] dark:drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]">
                   {post.title}
                 </h1>
                 <p>

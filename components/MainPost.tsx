@@ -48,15 +48,15 @@ function MainPost({ posts }: Props) {
                 </div>
                 <div className=" relative min-h-full w-[350px] sm:w-[400px] md:w-[500px] -mt-10 sm:-mt-12 text-left">
                   <div className="z-20 font-semibold text-gray-800 dark:text-white w-full flex flex-col">
-                    <h2 className="  border-x-inherit text-5xl sm:text-6xl ">
+                    <h2 className="  border-x-inherit  ">
                       <span
                         className="mainpost-shadow-red dark:group-hover:text-red-200 group-hover:text-gray-200 ease-in-out before:block 
-                      text-white dark:text-white before:inset-0 before:content:'' text-shadow"
+                      text-white dark:text-white text-shadow text-2xl sm:text-4xl"
                       >
                         {newestHighlightedPost.title}
                       </span>
                     </h2>
-                    <p className=" text-xl mt-4">
+                    <p className="text-base sm:text-xl  mt-4">
                       {newestHighlightedPost.description}
                     </p>
                     <p className=" text-[--primary1]">

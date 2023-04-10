@@ -31,7 +31,7 @@ const PostCard = ({ post }: Props) => {
 
           <div
             className="flex flex-col lg:flex-row gap-y-2 md:gap-x-2 items-center
-           lg:text-base pl-4 overflow-y-scroll scrollbar-none max-h-[150px]"
+           lg:text-base pl-4 overflow-y-scroll scrollbar-none max-h-[150px] min-w-fit"
           >
             {post.categories.map((category) => (
               <div
